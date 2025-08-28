@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@theme {
+    --font-system: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    --font-mono: ui-monospace, 'Cascadia Mono', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    --color-*: initial;
+    --color-wong-orange: #E69F00;
+    --color-wong-orange-dark: #CC8800;
+    --color-wong-sky-blue: #56B4E9;
+    --color-wong-bluish-green: #009E73;
+    --color-wong-yellow: #F0E442;
+    --color-wong-blue: #0072B2;
+    --color-wong-blue-dark: #005A8F;
+    --color-wong-vermillion: #D55E00;
+    --color-wong-red-purple: #CC79A7;
+    --color-wong-black: #000000;
+    --color-wong-grey: #999999;
+    --color-gray-50: #F5F5F5;
+    --color-gray-100: #E5E5E5;
+    --color-gray-200: #D4D4D4;
+    --color-gray-300: #B0B0B0;
+    --color-gray-400: #737373;
+    --color-gray-500: #525252;
+    --color-gray-600: #404040;
+    --color-gray-700: #2A2A2A;
+    --color-gray-800: #1A1A1A;
+    --color-gray-900: #0F0F0F;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --radius-*: initial;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --color-primary: var(--color-wong-orange);
+    --color-primary-hover: var(--color-wong-orange-dark);
+    --color-secondary: var(--color-wong-blue);
+    --color-secondary-hover: var(--color-wong-blue-dark);
+
+    --color-bg-dark: var(--color-gray-900);
+    --color-bg-medium: var(--color-gray-800);
+    --color-bg-light: var(--color-gray-700);
+    --color-bg-lighter: var(--color-gray-600);
+
+    --color-text-primary: var(--gray-50);
+    --color-text-secondary: var(--gray-300);
+
+    --color-border: var(--gray-600);
+    --color-border-hover: var(--gray-500);
+    --color-border-light: var(--gray-500);
+
+    --color-error: var(--color-wong-vermillion);
+    --color-correct-bg: rgba(0, 158, 115, 0.15);
+    --color-incorrect-bg: rgba(213, 94, 0, 0.15);
+    --color-accent-green: var(--color-wong-bluish-green);
+    --color-code-bg: var(--color-gray-900);
+}
