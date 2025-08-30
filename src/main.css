@@ -41,12 +41,12 @@
     --color-bg-light: var(--color-gray-700);
     --color-bg-lighter: var(--color-gray-600);
 
-    --color-text-primary: var(--gray-50);
-    --color-text-secondary: var(--gray-300);
+    --color-text-primary: var(--color-gray-50);
+    --color-text-secondary: var(--color-gray-300);
 
-    --color-border: var(--gray-600);
-    --color-border-hover: var(--gray-500);
-    --color-border-light: var(--gray-500);
+    --color-border: var(--color-gray-600);
+    --color-border-hover: var(--color-gray-500);
+    --color-border-light: var(--color-gray-500);
 
     --color-error: var(--color-wong-vermillion);
     --color-correct-bg: rgba(0, 158, 115, 0.15);
