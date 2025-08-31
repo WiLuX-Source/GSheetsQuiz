@@ -21,6 +21,27 @@ function Question() {
                         Lorem ipsum dolor sit, amet consectetur adipisic
                     </div>
                 </div>
+                <div id="explanation" className="flex items-center justify-center max-w-[600px] text-center p-[15px] bg-correct-bg border-l-4 border-l-accent-green visible text-[1.1em] text-balance min-h-[6rem] lining-nums rounded-l-md">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed rerum modi alias voluptatem necessitatibus suscipit repudiandae quod. Repellat perferendis libero, deleniti provident ad porro doloribus ipsam mollitia blanditiis fuga!</p>
+                </div>
+                <div id="options" className="flex flex-col gap-[15px] max-w-[600px] m-0 w-full">
+                    <div id="option1" className="bg-bg-light border-2 border-border rounded-lg px-[20px] py-[15px] cursor-pointer flex items-center gap-[15px] text-[1em]">
+                        <div className="bg-border-light text-text-primary w-[32px] h-[32px] rounded-md flex items-center justify-center font-bold shrink-0 text-[1em] pointer-events-none">1</div>
+                        <div className="font-mono font-bold pointer-events-none">Invalid Date</div>
+                    </div>
+                    <div id="option2" className="bg-bg-light border-2 border-border rounded-lg px-[20px] py-[15px] cursor-pointer flex items-center gap-[15px] text-[1em]">
+                        <div className="bg-border-light text-text-primary w-[32px] h-[32px] rounded-md flex items-center justify-center font-bold shrink-0 text-[1em] pointer-events-none">2</div>
+                        <div className="font-mono font-bold pointer-events-none">2000-01-01T00:00:00.000Z</div>
+                    </div>
+                    <div id="option3" className="bg-bg-light border-2 border-border rounded-lg px-[20px] py-[15px] cursor-pointer flex items-center gap-[15px] text-[1em]">
+                        <div className="bg-border-light text-text-primary w-[32px] h-[32px] rounded-md flex items-center justify-center font-bold shrink-0 text-[1em] pointer-events-none">3</div>
+                        <div className="font-mono font-bold pointer-events-none">Throws an error</div>
+                    </div>
+                    <div id="option4" className="bg-bg-light border-2 border-border rounded-lg px-[20px] py-[15px] cursor-pointer flex items-center gap-[15px] text-[1em]">
+                        <div className="bg-border-light text-text-primary w-[32px] h-[32px] rounded-md flex items-center justify-center font-bold shrink-0 text-[1em] pointer-events-none">4</div>
+                        <div className="font-mono font-bold pointer-events-none">1970-01-01T00:00:00.000Z</div>
+                    </div>
+                </div>
             </div>
             <footer className="text-center text-gray-300 text-sm">
                 <p>
