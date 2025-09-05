@@ -37,7 +37,7 @@ function Index() {
                     All questions verified using NodeJS 24.4.0 on a MacBook Pro set to the BST timezone (UTC+1).
                 </p>
 
-                <button onClick={() => navigate('/question')} className="bg-primary hover:bg-primary-hover text-bg-dark border-none rounded-lg font-bold cursor-pointer w-full max-w-[250px] py-3 text-base sm:text-xl">
+                <button onClick={() => navigate('/question')} className="bg-primary hover:bg-primary-hover text-bg-dark border-none rounded-lg font-bold cursor-pointer w-full max-w-[250px] py-3 text-base sm:text-xl font-sans">
                     Start Quiz
                 </button>
             </div>
