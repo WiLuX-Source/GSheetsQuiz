@@ -11,7 +11,7 @@ const buttonType = {
   disabled: "border-border opacity-[0.6] cursor-not-allowed",
 };
 function OptionButton({ number, description, type }: OptionButtonProps) {
-    const baseClass = "px-[20px] py-[15px] border-2 rounded-lg flex items-center gap-[15px] text-[1em] {type}"
+    const baseClass = "px-[15px] py-[12px] text-[0.9em] border-2 rounded-lg flex items-center gap-[15px] sm:px-[15px] sm:py-[20px] sm:text-[1em]"
     return (
         <div className={`${baseClass} ${buttonType[type]}`}>
             <div className="bg-border-light text-text-primary w-[32px] h-[32px] rounded-md flex items-center justify-center font-bold shrink-0 text-[1em] pointer-events-none">{number}</div>
