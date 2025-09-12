@@ -9,7 +9,7 @@ const explanationType = {
     disabled: "invisible"
 };
 function ExplanationSection({ description, type }: ExplanationProps) {
-    const baseClass = "flex items-center justify-center max-w-[600px] text-center p-[15px] border-l-4 text-[1.1em] text-balance min-h-[6rem] lining-nums rounded-md"
+    const baseClass = "flex items-center justify-center max-w-[600px] text-center p-[15px] border-l-4 text-[1.1em] text-balance h-[6rem] overflow-y-auto lining-nums rounded-md w-full"
     return (
         <div className={`${baseClass} ${explanationType[type]}`}>
             <p>{description}</p>
