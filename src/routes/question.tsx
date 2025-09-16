@@ -13,7 +13,7 @@ function Question() {
     const navigate = useNavigate()
     // it should become useState when dynamic logic is implemented.
     const quizData = Questions;
-    const questionNumber = parseInt(searchParams.get("question")!)
+    const questionNumber = Number(searchParams.get("question")!)
     const questionData = quizData[questionNumber - 1]
     useEffect(() => {
         if (!searchParams.has('question')) {
@@ -61,7 +61,7 @@ function Question() {
     const handleNext = () => {
         setSelectedAnswer(null);
         if (questionNumber + 1 > quizData.length) {
-            navigate("/results")
+            navigate("/results", { state: { score: 5, total: quizData.length } });
             return
         }
         setSearchParams({ question: String(questionNumber + 1) });
