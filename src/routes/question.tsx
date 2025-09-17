@@ -10,6 +10,7 @@ function Question() {
     const { quizId } = useParams()
     const [searchParams, setSearchParams] = useSearchParams();
     const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+    const [score, setScore] = useState<number>(0);
     const navigate = useNavigate()
     // it should become useState when dynamic logic is implemented.
     const quizData = Questions;
@@ -57,11 +58,14 @@ function Question() {
     const handleAnswer = (selectedIndex: number) => {
         if (selectedAnswer !== null) return
         setSelectedAnswer(selectedIndex);
+                if (selectedIndex === questionData.correct) {
+            setScore(prevScore => prevScore + 1);
+        }
     };
     const handleNext = () => {
         setSelectedAnswer(null);
         if (questionNumber + 1 > quizData.length) {
-            navigate("/results", { state: { score: 5, total: quizData.length } });
+            navigate("/results", { state: { score: score, total: quizData.length } });
             return
         }
         setSearchParams({ question: String(questionNumber + 1) });
