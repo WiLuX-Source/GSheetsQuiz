@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router";
-import { ThemeIcon } from "../components/ThemeIcon";
 function Index() {
     const navigator = useNavigate();
     const navigate = (redirect: string) => {
@@ -8,7 +7,6 @@ function Index() {
 
     return (
         <div id="body" className="font-system bg-bg-dark text-text-primary min-h-screen flex flex-col items-center p-[20px] supports-[height:100dvh]:min-h-dvh">
-            <ThemeIcon />
             <div id="startScreen" className="flex flex-col items-center gap-[25px] text-center max-w-[800px] w-full p-[20px] mt-auto mb-auto">
                 <header>
                     <h1 className="font-mono font-bold text-[2.5rem] sm:text-[4rem]">
